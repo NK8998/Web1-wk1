@@ -39,6 +39,10 @@ nav a:hover{
     transition: .5s ease;
     background-color: rgba(255, 235, 205, 0.473);
 }
+
+nav a:not(:hover){
+    -webkit-transition: 0.5s; /* for chrome only*/
+}
 /* styling navigation bar */
 
 /* styling a tag */
@@ -55,9 +59,18 @@ strong a{
 }
 
 strong a:hover{
-    transition: .5s ease;
-    background-color: rgba(255, 235, 205, 0.452);
+    transition: 0.6s ease;
+    background-color: rgba(247, 243, 236, 0.24);
+    color: rgb(7, 14, 7);
+    padding-right: 15px;
+    padding-left: 15px;
 }
+
+strong a:not(:hover){
+    -webkit-transition: 0.7s; /* for chrome only*/
+}
+
+
 /* styling a tag */
 
 

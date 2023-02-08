@@ -7,18 +7,27 @@
     text-decoration: none;
 }
 
-
-
-
 body{
     background-image: url("k2.jpg");
-    background-size: 800px 600px;
-    background-position: center;
-    background-color: black;
     background-repeat: no-repeat;
-    color: rgb(139, 139, 139);
+    background-position: 170px 1300px;
+    background-color: black;
+    color: rgb(235, 224, 211);
 }
 
+
+.first_img{
+    margin-top: 150px;
+    height: 400px;
+    width: 650px;
+    margin-left: 350px;
+}
+
+
+.second_img{
+    margin-top: 100px;
+    margin-left: -500px;
+}
 
 /* styling navigation bar */
 
@@ -37,7 +46,8 @@ nav a {
 
 nav a:hover{
     transition: .5s ease;
-    background-color: rgba(255, 235, 205, 0.473);
+    background-color: rgb(240, 232, 220);
+    color: crimson;
 }
 
 nav a:not(:hover){
@@ -60,8 +70,8 @@ strong a{
 
 strong a:hover{
     transition: 0.6s ease;
-    background-color: rgba(247, 243, 236, 0.24);
-    color: rgb(7, 14, 7);
+    background-color: rgb(247, 243, 236);
+    color: rgb(228, 61, 94);
     padding-right: 15px;
     padding-left: 15px;
 }
@@ -78,7 +88,7 @@ strong a:not(:hover){
 section{
     text-align: center;
     justify-content: center;
-    margin-top: 340px;
+    margin-top: 320x;
 }
 
 section button{
@@ -94,7 +104,7 @@ section button{
 
 section button a{
     font-size: 20px;
-    color: gray;
+    color: rgb(207, 204, 204);
 }
 /* styling section*/
 
@@ -118,10 +128,322 @@ section button span:after{
 }
 
 section button:hover span{
-    background-color: rgba(12, 71, 17, 0.055);
+    background-image:linear-gradient(to right, rgb(104, 38, 151) , rgb(184, 140, 74));
     padding-right: 30px;
     padding-left: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
+    border-radius: 8px;
+}
+/*button animation end*/
+
+/*styling and adding animation to first set of images*/
+.i1, .i2, .i3, .i4{
+    border-radius: 5px;
+    height: 320px;
+    width: 570px;
+    object-fit: cover;
 }
 
+@media (min-width: 50em){
+    .img1{
+        margin-top: -200px;
+        padding: 220px ;
+        display: grid;
+        gap: 1.3rem;
+        grid-template-columns: repeat(2, 1fr);
+    
+}
+}
+.i1:hover, .i2:hover, .i3:hover, .i4:hover{
+    transform: scale(1.1);
+    transition: .7s ease;
+}
+
+.i1:not(:hover), .i2:not(:hover), .i3:not(:hover), .i4:not(:hover){
+    -webkit-transition: .7s;
+}
+/*styling and adding animation to first set of images*/
+
+/*styling first class(part1)and adding animations*/
+
+@media (min-width: 50em){
+.part1 h1{
+    color: rgb(214, 212, 245);
+    font-size: 60px;
+    border-radius: 5px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 200px;
+}
+}
+.part1 h1:hover{
+    transition: .6s ease;
+    background-image: rgba(12, 71, 17, 0.055);
+    
+}
+
+.part1 h1:not(:hover){
+    -webkit-transition: .7s;
+}
+.part1 h1 span{
+    background-image:linear-gradient(to right, rgb(133, 76, 173) , rgb(185, 153, 105));
+    color: blanchedalmond;
+    border-radius: 4px;
+}
+
+.part1 h1 span:hover{
+    transition: .5s ease;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.part1 h1 span:not(:hover){
+    -webkit-transition: 0.7s;
+
+}
+
+.part1 p{
+    padding: 50px 50px;
+    font-size: 25px;
+}
+
+@media (min-width: 50em){
+.part1 hr{
+    border-radius: 12px;
+    border: none;
+    height: 30px;
+    background-image:linear-gradient(to right, indigo , rgb(243, 186, 102));
+    width: 500px;
+    margin-left: 550px;
+    margin-bottom: 200px;
+    
+}
+
+.h1 hr{
+    border-radius: 12px;
+    border: none;
+    height: 30px;
+    background-image: linear-gradient(to right, rgb(201, 46, 46) , rgb(209, 209, 23));
+    width: 1300px;
+    margin-left: 140px;
+    margin-top: -150px;
+}
+}
+/*styling first class(part1)and adding animations*/
+
+
+/*styling second class(part2)*/
+.part2{
+    justify-content: center;
+}
+
+.part2 h1, p{
+    margin-bottom: 20px;
+  
+}
+.part2 h1{
+    color: rgb(177, 219, 230);
+    font-size: 75px;
+    font-weight: 10;
+    margin-top: 760px;
+}
+
+.part2 p{
+    margin-bottom: 180px;
+    font-size: 30px;
+}
+.part2 hr{
+    height: 4px;
+    border: none;
+    border-radius: 8px;
+    width: 900px;
+    margin-left: 300px;
+}
+
+.img2{
+    height: 200px;
+    width:200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+@media (min-width: 50em){
+    .grid{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+}
+}
+.grid h3{
+    font-size: 40px;
+}
+
+.grid p{
+    font-size: 20px;
+}
+
+
+/*styling second class (part2)*/
+
+
+/*styling last class (part3)*/
+
+
+@media (min-width: 50em){
+    .part3{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+        padding: 90px ;
+    }
+}
+
+.p2{
+    margin-top: 100px;
+}
+
+
+.testimonial1{
+    display: block;
+    background-image: linear-gradient(to right, indigo , rgb(243, 186, 102));
+    border-radius: 8px;
+    padding: 5px 5px;
+   justify-content: center;
+   height: 300px;
+   color: rgba(255, 228, 196, 0.808);
+}
+
+
+.testimonial1 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 600px;
+    
+}
+
+.testimonial1 h4{
+    margin-top: -50px;
+    margin-right: 390px;
+    font-size: 30px;
+}
+
+.testimonial1 h5{
+   margin-right: 440px;
+   font-size: 30px;
+}
+
+.testimonial1 p{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+
+.testimonial2{
+    display: block;
+    background-image: linear-gradient(to right, rgb(119, 42, 119) , rgb(90, 223, 90));
+    border-radius: 8px;
+    padding: 5px 5px;
+    justify-content: center;
+    height: 300px;
+    color: rgba(255, 228, 196, 0.808);
+}
+
+
+.testimonial2 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 600px;
+    
+}
+
+.testimonial2 h4{
+    margin-top: -50px;
+    margin-right: 350px;
+    font-size: 30px;
+}
+
+.testimonial2 h5{
+   margin-right: 470px;
+   font-size: 30px;
+}
+
+.testimonial2 p{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+
+
+.testimonial3{
+    display: block;
+    background-image: linear-gradient(to right, rgb(148, 148, 230) , rgb(31, 136, 136));
+    border-radius: 8px;
+    padding: 5px 5px;
+   justify-content: center;
+   height: 300px;
+   color: rgba(255, 228, 196, 0.808);
+}
+
+
+.testimonial3 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 600px;
+    
+}
+
+.testimonial3 h4{
+    margin-top: -50px;
+    margin-right: 355px;
+    font-size: 30px;
+}
+
+.testimonial3 h5{
+   margin-right: 440px;
+   font-size: 30px;
+}
+
+.testimonial3 p{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+
+.testimonial4{
+    display: block;
+    background-image: linear-gradient(to right, rgb(201, 46, 46) , rgb(209, 209, 23));;
+    border-radius: 8px;
+    padding: 5px 5px;
+   justify-content: center;
+   height: 300px;
+   color: rgba(255, 228, 196, 0.808);
+}
+
+
+.testimonial4 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 600px;
+    
+}
+
+.testimonial4 h4{
+    margin-top: -50px;
+    margin-right: 380px;
+    font-size: 30px;
+}
+
+.testimonial4 h5{
+    margin-right: 320px;
+    font-size: 30px;
+}
+
+.testimonial4 p{
+    margin-top: 50px;
+    font-size: 20px;
+}
+/*styling last class (part3)*/
